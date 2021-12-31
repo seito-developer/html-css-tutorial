@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+/*
+base
+*/
+body {
+	font-family: 'Noto Sans JP', "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
+	color: #333;
+}
+
+/*
+grid
+*/
+.grid {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.grid-item {
+	list-style: none;
+}
+.grid-item.grid-col-2 {
+	width: 50%;
+}
+.grid-item.grid-col-3 {
+	width: 33.3%;
+}
+.grid-item.grid-col-4 {
+	width: 25%;
+}
+
+/*
+section
+*/
+.section {
+	padding: 30px 15px;
+}
+.section-headline {
+	text-align: center;
+	font-size: 40px;
+	margin: 0 0 40px;
+}
+.section-button {
+	margin-top: 40px;
+	text-align: center;
+}
+
+/*
+buton
+*/
+.button {
+	display: inline-block;
+	color: #FFF;
+	font-weight: bold;
+	background: #333;
+	text-align: center;
+	padding: 15px 60px;
+	text-decoration: none;
+	border-radius: 5px;
+	box-shadow: 5px 5px 0 #bbb;
+	transition: box-shadow .25s;
+}
+.button:hover {
+	box-shadow: 0 0 0 #bbb;
+}
+
+/*
+hero
+*/
+.hero {
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+}
+.hero > strong {
+	position: absolute;
+	z-index: 2;
+	color: #FFF;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 120px;
+}
+.hero > video {
+	position: absolute;
+	z-index: 1;
+	width: auto;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*
+header
+*/
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	background: #FFF;
+	position: fixed;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+.header-logo {
+	margin: 0;
+}
+.header-logo > a {
+	display: block;
+}
+.header-nav {}
+.header-navlist {
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.header-navitem {}
+.header-navitem > a {
+	display: block;
+	padding: 10px;
+	color: #333;
+	text-decoration: none;
+	font-weight: bold;
+	position: relative;
+}
+.header-navitem > a:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	border-bottom: 2px solid #333;
+	width: 100%;
+	opacity: 0;
+	transition: opacity .25s;
+}
+
+.header-navitem > a:hover:after {
+	opacity: 1;
+}
+
+/*
+about
+*/
+.about {
+	margin: 0;
+	display: flex;
+	align-items: top;
+}
+.about-image {}
+.about-caption {
+	padding-left: 15px;
+}
+.about-headline {
+	margin: 0 0 20px;
+	font-size: 30px;
+}
+.about-description {}
+
+/*
+feature
+*/
+.feature {
+	text-align: center;
+	padding: 0 15px;
+}
+.feature-headline {
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.feature-img {
+	margin: 0 0 20px;
+}
+.feature-description {
+	margin: 0;
+	text-align: left;
+}
+
+
+/*
+card
+*/
+.card {
+	padding: 0 10px;
+}
+.card-link {
+	display: block;
+	color: #333;
+	text-decoration: none;
+	position: relative;
+	transition: background-color .25s;
+}
+.card-link:hover {
+	background: #eee;
+}
+.card-label {
+	color: #FFF;
+	background: #999;
+	display: block;
+	padding: 5px 10px;
+	font-size: 12px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.card-img {
+	width: 100%;
+	height: auto;
+}
+.card-info {
+	padding: 5px 10px;
+}
+.card-time {}
+.card-headline {
+	margin: 0;
+}
+.card-description {
+	margin-bottom: 0;
+}
+
+/*
+avator
+*/
+.avator {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: start;
+	padding: 10px;
+}
+.avator-name {
+	font-weight: bold;
+	padding-left: 15px;
+}
+.avator-image {
+	margin: 0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.avator-image > img {}
+
+
+
+
+
+
+
+
+

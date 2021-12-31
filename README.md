@@ -1,3 +1,18 @@
+https://www.pexels.com/videos/
+ディレクトリ構成 (assetsとか)
+
+Font
+https://ics.media/entry/200317/
+https://fonts.google.com/noto/specimen/Noto+Sans+JP
+
+SVG
+https://worldvectorlogo.com/ja/downloaded/svg
+
+flex
+https://mamewaza.com/support/blog/howto-use-flex.html
+---
+Heroはあとに
+---
 <!DOCTYPE html>
 <html>
 <head>
