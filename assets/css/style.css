@@ -10,6 +10,14 @@ body {
 	color: #333;
 }
 
+label, input, textarea, button {
+	cursor: pointer;
+}
+
+img, iframe {
+	max-width: 100%;
+}
+
 /*
 grid
 */
@@ -23,14 +31,25 @@ grid
 .grid-item {
 	list-style: none;
 }
-.grid-item.grid-col-2 {
+.grid-col-2 > .grid-item {
 	width: 50%;
 }
-.grid-item.grid-col-3 {
+.grid-col-3 > .grid-item {
 	width: 33.3%;
 }
-.grid-item.grid-col-4 {
+.grid-col-4 > .grid-item {
 	width: 25%;
+}
+@media screen and (max-width: 768px) {
+	.grid {
+		display: block;
+	}
+	.grid-col-2 > .grid-item,
+	.grid-col-3 > .grid-item,
+	.grid-col-4 > .grid-item {
+		width: 100%;
+		margin: 20px 0;
+	}
 }
 
 /*
@@ -38,6 +57,9 @@ section
 */
 .section {
 	padding: 30px 15px;
+}
+.section.section-secondary {
+	background: #efefef;
 }
 .section-headline {
 	text-align: center;
@@ -48,6 +70,19 @@ section
 	margin-top: 40px;
 	text-align: center;
 }
+@media screen and (max-width: 768px) {
+	.section {
+		padding: 20px 10px;
+	}
+	.section-headline {
+		font-size: 30px;
+		margin: 0 0 20px;
+	}
+	.section-button {
+		margin-top: 20px;
+	}
+}
+
 
 /*
 buton
@@ -63,9 +98,14 @@ buton
 	border-radius: 5px;
 	box-shadow: 5px 5px 0 #bbb;
 	transition: box-shadow .25s;
+	border: 0;
 }
 .button:hover {
 	box-shadow: 0 0 0 #bbb;
+}
+
+.button.button-submission {
+	background: #92d3ca;
 }
 
 /*
@@ -98,6 +138,11 @@ hero
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 768px) {
+	.hero > strong {
+		font-size: 60px;
+	}
+}
 
 /*
 header
@@ -108,7 +153,6 @@ header
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 15px;
-	background: #FFF;
 	position: fixed;
 	z-index: 10;
 	top: 0;
@@ -151,6 +195,11 @@ header
 .header-navitem > a:hover:after {
 	opacity: 1;
 }
+@media screen and (max-width: 768px) {
+	.header-navitem > a {
+		font-size: 12px;
+	}
+}
 
 /*
 about
@@ -158,7 +207,6 @@ about
 .about {
 	margin: 0;
 	display: flex;
-	align-items: top;
 }
 .about-image {}
 .about-caption {
@@ -169,6 +217,18 @@ about
 	font-size: 30px;
 }
 .about-description {}
+@media screen and (max-width: 768px) {
+	.about {
+		display: block;
+	}
+	.about-image {
+		margin-bottom: 20px;
+	}
+	.about-headline {
+		text-align: center;
+		font-size: 20px;
+	}
+}
 
 /*
 feature
@@ -250,13 +310,158 @@ avator
 	border-radius: 50%;
 	overflow: hidden;
 }
-.avator-image > img {}
 
+/*
+form-table
+*/
+.form {}
+.form-table {
+	margin: 0 auto;
+}
+.form-table tr {}
+.form-table th {
+	padding: 10px;
+	text-align: left;
+}
+.form-table td {
+	padding: 10px;
+}
+.form-button {
+	margin-top: 40px;
+	text-align: center;
+}
+@media screen and (max-width: 768px) {
+	.form-table,
+	.form-table tbody,
+	.form-table tr,
+  	.form-table th,
+  	.form-table td {
+  		display: block;
+  	}
+  	.form-button {
+		margin-top: 20px;
+	}
+}
 
+.select {
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	min-width: 500px;
+}
+@media screen and (max-width: 768px) {
+	.select {
+		min-width: auto;
+		width: 100%;
+	}
+}
 
+.input {
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	min-width: 500px;
+}
+@media screen and (max-width: 768px) {
+	.input {
+		min-width: auto;
+		width: 100%;
+	}
+}
 
+.radio {
+	margin: 0 10px;
+}
+.textarea {
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	min-width: 500px;
+	min-height: 100px;
+}
+@media screen and (max-width: 768px) {
+	.textarea {
+		min-width: auto;
+		width: 100%;
+	}
+}
 
+/*
+works
+*/
+.works {
+	margin: 40px 0;
+	padding: 20px;
+	text-align: center;
+}
+.works > img {
+	display: inline-block;
+	margin: 0 15px;
+}
+@media screen and (max-width: 768px) {
+	.works {
+		margin: 20px 0;
+		padding: 10px;
+	}
+	.works > img {
+		width: 100px;
+		margin: 5px;
+	}
+}
 
+/*
+footer
+*/
+.footer {
+	background: #333;
+	color: #FFF;
+}
+.footer-map {
+	margin: 0;
+	padding: 40px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.footer-map > iframe {
+	width: 60%;
+}
 
-
-
+.footer-mapinfo {
+	width: 40%;
+	padding: 15px;
+}
+.footer-maplogo {
+	font-size: 25px;
+	font-weight: bold;
+}
+.footer-maplogo > svg {
+	margin-right: 10px;
+}
+.footer-mapaddress {
+	font-style: normal;
+}
+.footer-mapaddress > a {
+	color: #FFF;
+}
+.footer-line {
+	border-color: #444;
+	margin: 0;
+}
+.footer-copy {
+	display: block;
+	text-align: center;
+	padding: 10px;
+}
+@media screen and (max-width: 768px) {
+	.footer-map {
+		padding: 15px;
+		display: block;
+	}
+	.footer-map > iframe {
+		width: 100%;
+	}
+	.footer-mapinfo {
+		width: 100%;
+	}
+}
