@@ -11,8 +11,7 @@ https://worldvectorlogo.com/ja/downloaded/svg
 flex
 https://mamewaza.com/support/blog/howto-use-flex.html
 ---
-Heroはあとに
----
+
 <!DOCTYPE html>
 <html>
 <head>
