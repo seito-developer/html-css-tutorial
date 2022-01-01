@@ -1,3 +1,8 @@
+@charset "UTF-8";
+
+/*
+Web font
+*/
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 /*
@@ -9,11 +14,9 @@ body {
 	line-height: 1.5;
 	color: #333;
 }
-
 label, input, textarea, button {
 	cursor: pointer;
 }
-
 img, iframe {
 	max-width: 100%;
 }
@@ -83,7 +86,6 @@ section
 	}
 }
 
-
 /*
 buton
 */
@@ -103,7 +105,6 @@ buton
 .button:hover {
 	box-shadow: 0 0 0 #bbb;
 }
-
 .button.button-submission {
 	background: #92d3ca;
 }
@@ -123,7 +124,7 @@ hero
 	color: #FFF;
 	font-weight: bold;
 	text-align: center;
-	width: 100%;
+	width: 105%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -191,12 +192,11 @@ header
 	opacity: 0;
 	transition: opacity .25s;
 }
-
 .header-navitem > a:hover:after {
 	opacity: 1;
 }
 @media screen and (max-width: 768px) {
-	.header-navitem > a {
+	.header {
 		font-size: 12px;
 	}
 }
@@ -343,6 +343,9 @@ form-table
 	}
 }
 
+/*
+select
+*/
 .select {
 	border-radius: 5px;
 	padding: 10px;
@@ -356,6 +359,9 @@ form-table
 	}
 }
 
+/*
+input
+*/
 .input {
 	border-radius: 5px;
 	padding: 10px;
@@ -369,9 +375,16 @@ form-table
 	}
 }
 
+/*
+radio
+*/
 .radio {
 	margin: 0 10px;
 }
+
+/*
+textarea
+*/
 .textarea {
 	border-radius: 5px;
 	padding: 10px;
@@ -426,7 +439,6 @@ footer
 .footer-map > iframe {
 	width: 60%;
 }
-
 .footer-mapinfo {
 	width: 40%;
 	padding: 15px;
