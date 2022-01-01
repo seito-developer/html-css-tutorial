@@ -13,5 +13,10 @@ for (var i = $navLink.length - 1; i >= 0; i--) {
 			top: $target.offsetTop - 50,
 		    behavior: "smooth"
 		 });
-	})
+	});
 }
+
+// particles
+particlesJS.load('js-particles', './assets/js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
